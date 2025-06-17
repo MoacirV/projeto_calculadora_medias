@@ -10,40 +10,33 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="main.css">
-    <title>Calculadora de médias</title>
+    <title>Agenda de contatos</title>
   </head>
   <body>
     <div class="container">
         <header>
-          <img src="images/logo.png" alt="Capelo e diploma" />
-          <h1>Calculadora de médias</h1>
+          <img src="images/phone.png" alt="ícone de telefone" />
+          <h1>Agenda de contatos</h1>
+          <img src="images/phone.png" alt="ícone de telefone" />
         </header>
-        <form id="form-atividade">
-          <input type="text" id="nome-atividade" required placeholder="Nome da atividade" />
-          <input id="nota-atividade"
-            type="number"
-            required
-            placeholder="Nota da atividade"
-            min="0"
-            max="10"
-          />
+        <form id="form-agenda">
+          <input type="text" id="nome-contato" required placeholder="Nome de contato" />
+          <input id="numero-contato" type="tel" required placeholder="Número de contato" pattern="[0-9]+"/>
           <button type="submit">Adcionar +</button>
         </form>
         <table cellspacing="0">
           <thead>
             <tr>
-              <th>Nome da atividade</th>
-              <th>Nota da atividade</th>
-              <th>Aprovado?</th>
+              <th>Nome do contato</th>
+              <th>Número do contato</th>
             </tr>
           </thead>
           <tbody>
           </tbody>
           <tfoot>
             <tr>
-              <td>Média Final</td>
-              <td id="media-final-valor">---</td>
-              <td id="media-final-resultado">---</td>
+              <td class="txt-qtd">Quantidade de contatos:</td>
+              <td id="quantidade-contatos">---</td>
             </tr>
           </tfoot>
         </table>
